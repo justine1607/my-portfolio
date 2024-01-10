@@ -1,0 +1,23 @@
+
+.card{
+    .my-projects{
+        display: flex;
+        flex-direction: column;
+        
+
+  a{
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+    color:#AAAEB6;
+    margin-top: 80%;
+    margin-left: 20%;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    
+    &:hover{
+        color: greenyellow;
+    }
+    }
+ }
+ }
