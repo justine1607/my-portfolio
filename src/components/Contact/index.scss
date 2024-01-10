@@ -1,0 +1,130 @@
+.loader{
+  display: block;
+  position: relative;
+  margin-top: 25%;
+  margin-left: 10%;
+  height: 12px;
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loader:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 100%;
+  width: 0;
+  background-color: #1af451;
+  animation: 6s prog ease-in infinite;
+}
+
+@keyframes prog {
+  to  {   width: 100%;}
+}
+@media screen and (max-width: 1200px) {
+      .loader{
+          display: block;
+          position: relative;
+          margin-top: 50%;
+          margin-left: 10%;
+          height: 12px;
+          width: 80%;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          overflow: hidden;
+      }
+}
+
+
+.contact-form {
+  width: 100%;
+  margin-top: 10%;
+  
+
+  .style {
+    padding: 0;
+    margin: 0;
+    width: 35%;
+    position: absolute;
+    top: 65%;
+    left: 11%;
+    @media  screen and (max-width:1200px) {
+        
+        width: 100%;
+        top: 55%;
+        left: 0;
+        margin: 2px;
+      
+    }
+ }
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='text-area'] {
+      width: 100%;
+      border: 0;
+      background: greenyellow;
+      height: 60px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .flat-buttons {
+      color: greenyellow;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid greenyellow;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 75px;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+    margin-top: 1%;
+    /* margin-right: 20%; */
+    margin-left: 91%;
+    
+    @media screen and (max-width:1200px) {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      margin-left: 84%;
+
+    }
+    }
+
+
+  
