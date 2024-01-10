@@ -6,6 +6,16 @@
     min-width: 10px;
 }
 
+.text-animated {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+  }
+
 .text-animated-hover{
     min-width: 10px;
     display: inline-block;
