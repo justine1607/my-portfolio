@@ -22,7 +22,7 @@ const Projects = (() => {
     }, [letterClass]);
 
     return (
-        <div className='project-page'>
+        <div className='container project-page'>
             <div className='text-zone'>
                 <h1>
                     <AnimatedLetters 
@@ -32,33 +32,16 @@ const Projects = (() => {
                 </h1>
             </div>
                 <div className='my-projects'>
-            <div>
-                <img className='project1' src={chloroR} alt='pic of my 1st project' />
-                <p>
-                    <a className='link1' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
-                </p>
-            </div>
-            <div>
-                <img className='project2' src={chloroR} alt='pic of my 1st project' />
-                <p>
-                    <a className='link2' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
-                </p>
-            </div>
-        </div>
-        <div className='my-projects1'>
-            <div>
-                <img className='project3' src={chloroR} alt='pic of my 1st project' />
-                <p>
-                    <a className='link3' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
-                </p>
-            </div>
-            <div>
-                <img className='project4' src={chloroR} alt='pic of my 1st project' />
-                <p>
-                    <a className='link4' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
-                </p>
-            </div>
-        </div>
+                    
+                        <img className='my-project1' src={chloroR} alt='pic of my 1st project' />
+                        <span>
+                            <a className='link1' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
+                        </span>
+                        <img className='my-project2' src={chloroR} alt='pic of my 1st project' />
+                        <span>
+                            <a className='link2' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
+                        </span>
+             </div>
         </div>
     );
 });
