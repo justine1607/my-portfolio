@@ -1,48 +1,14 @@
-.loader{
-  display: block;
-  position: relative;
-  margin-top: 25%;
-  margin-left: 10%;
-  height: 5px;
-  width: 10px;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.loader:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 10%;
-  height: 8px;
-  width: 10px;
-  background-color: #1af451;
-  animation: 3.1s prog ease-in infinite;
-}
-
-@keyframes prog {
-  to  {   width: 10px;}
-}
-@media screen and (max-width: 1200px) {
-      .loader{
-          display: block;
-          position: relative;
-          margin-top: 50%;
-          margin-left: 10%;
-          height: 12px;
-          width: 80%;
-          border: 1px solid #fff;
-          border-radius: 10px;
-          overflow: hidden;
-      }
-}
 
 
 .home-page {
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     .text-zone {
       position: absolute;
       left: 30%;
-      top: 50%;
+      top: 53%;
       transform: translateY(-50%);
       width: 40%;
       max-height: 90%;
@@ -57,24 +23,15 @@
       font-weight: 400;
   
       img {
-        margin-left: 20px;
-        opacity: 0;
+        margin-left: 10px;
         width: 32px;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
+      
       }
     }
   
-    h2 {
-      color: #8d8d8d;
-      margin-top: 20px;
-      font-weight: 400;
-      font-size: 11px;
-      font-family: sans-serif;
-      letter-spacing: 3px;
-      animation: fadeIn 1s 1.8s backwards;
-    }
   
     .flat-button {
       color: greenyellow;
@@ -87,12 +44,44 @@
       border: 1px solid greenyellow;
       margin-top: 25px;
       float: left;
-      animation: fadeInAnimation 1s 1.8s backwards;
       white-space: nowrap;
+      
   
+      
       &:hover {
         background: greenyellow;
+        transform: translateX(-100px);
         color: #333;
+      }
+    }
+    .wrapper {
+      // height: 100vh;
+      /*This part is important for centering*/
+      display: grid;
+      place-items: center;
+    }
+    
+    .typing-demo {
+      width: 19ch;
+      animation: appear 15s linear 2s forwards, typing 2s steps(18), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 2em;
+      color: #8d8d8d;
+      margin-left: -64%;
+    }
+    
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+        
+    @keyframes blink {
+      50% {
+        border-color: transparent
       }
     }
   }
@@ -101,30 +90,30 @@
   
   @media screen and (max-width: 1200px) {
     .home-page{
-      .text-zone {
       width: 100%;
-      transform: none;
-      padding: 10px;
-      box-sizing: border-box;
-      position: sticky;
-      margin-top: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text-zone {
+        transform: none;
+        padding: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        margin-top: 19%;
+        width: 100%;
+        left: 5%;
     }
    }
     .home-page .flat-button {
-      float: none;
+      
       display: block;
       margin: 20px auto 0 auto;
       width: 124px;
     }
-  
-    .logo-container {
-      position: relative;
-      width: 100px;
-      height: auto;
-      top: 50px;
-      right: 0;
-      box-sizing: border-box;
-      margin: auto;
-      left: 0;
+    .home-page .wrapper{
+        position: relative;
+        margin-top: 5%;
+        width: 100%;
+        left: 25%;
     }
-  }
+}

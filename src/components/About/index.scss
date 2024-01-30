@@ -1,50 +1,12 @@
-.line{
-    display: block;
-    position: relative;
-    margin-top: 50%;
-    margin-left: 10%;
-    height: 5px;
-    width: 10px;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .line:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 10%;
-    height: 8px;
-    width: 10px;
-    background-color: #1af451;
-    animation: 3.1s prog ease-in infinite;
-  }
-  
-  @keyframes prog {
-    to  {   width: 10px;}
-  }
-  @media screen and (max-width: 1200px) {
-        .line{
-            display: block;
-            position: relative;
-            margin-top: 10%;
-            margin-left: 10%;
-            height: 12px;
-            width: 80%;
-            border: 1px solid #fff;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-  }
+
 .cube-cont {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  padding-top: 18%;
-  margin-left: 0;
-  position: absolute;
-  right: 0;
-  overflow: hidden;
+    margin-top: 20%;
+    right: 38%;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    margin-left: 60%;
+    z-index: 1;
 
   .cubespinner {
       animation: spincube;
@@ -112,12 +74,11 @@
   }
 
   @media screen and (max-width: 1200px) {
-    position:absolute; // or any other styling you want to apply for smaller screens
-    left: auto;
-    top: 50%;
-    right: 40%;
+    margin-top: 7%;
+    right: 38%;
     width: 100%;
-    overflow: visible; // or adjust the width as needed
+    overflow: visible;
+    position: relative;
 
     
     .cube-cont .cubespinner {

@@ -2,115 +2,87 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 5%;
+    z-index: 1;
   
-    .my-project1,
-    .my-project2 {
+    .my-project1{
+      position: relative;
+      z-index: 1;
       box-shadow: 0 4px 8px 0 rgba(230, 232, 227, 0.93);
       transition: box-shadow 0.3s, transform 0.3s;
-      width: 35%;
+      width: 40%;
       max-width: 100%;
-      height: auto;
       border-radius: 5px;
+      margin-top: 10%;
+      object-fit: cover;
+      margin-left: -4%;
+    }
+
+    h6 a { 
+      text-decoration: none;
+      font-size: 16px;
+      color: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
+      left: 20%;
+      top: 70%;
+  }
+    
+    h6 a:hover{
+      color: greenyellow;
+      font-size: 20px;
+      cursor: pointer;
+      }
+
+    .project{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -229%;
+      position: relative;
     }
+
   
-    .my-project1 {
-      margin-left: -38%;
-    }
-  
-    .my-project2 {
-      margin-left: 45%;
-    }
-  
-    .my-project1:hover,
-    .my-project2:hover {
+    .my-project1:hover {
       box-shadow: 0 8px 16px 0 rgba(230, 232, 227, 0.93);
       transform: translate(20px, 30px); /* Moves the element 20 pixels to the right and 30 pixels down */
       /* Adjust the values based on the desired movement */
     }
   }
 
-    span {
-      .link1{
-    
-        margin-left: 19%;
-        text-decoration: none;
-        font-size: 16px;
-        color: #444;
-        top: 94%;
-        position: absolute;
-    
-      }
-    
-      .link2{
-    
-        margin-left: -19%;
-        text-decoration: none;
-        font-size: 16px;
-        color: #444;
-        top: 94%;
-        position: absolute;
-      }
-
-      .link1:hover,
-      .link2:hover{
-        transform: translate(20px, 30px);
-        color: greenyellow;
-        font-size: 20px;
-      }
-
-    }
- 
- .my-projects1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 
 
-    .project3{
-      
-      box-shadow: 0 4px 8px 0 rgba(230, 232, 227, 0.93);
-      transition: 0.3s;
-      width: 60%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-     margin-left: 40%;
-    }
   
-    .project4{
-      
-      box-shadow: 0 4px 8px 0 rgba(230, 232, 227, 0.93);
-      transition: 0.3s;
-      width: 60%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-left: 10%;
-    }
-  
-  
-    p {
-      .link3{
-    
-        margin-left: 65%;
+  @media screen and (max-width:1200px) {
+      .my-projects{
+        display: flex;
+        flex-direction: column;
+        
+      .my-project1{
+        width: 100%;
+        margin-left: -5%;
+        margin-top: 27%;
+        object-fit: cover;
+       }
+
+      span .link1{
         text-decoration: none;
         font-size: 16px;
         color: #444;
-    
+        top: 55%;
+        margin-left: -10%;
       }
-    }
-    p {
-      .link4{
-    
-        margin-left: 35%;
-        text-decoration: none;
-        font-size: 16px;
-        color: #444;
-        top: 92%;
+     .project{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        display: none;
       }
-    }
- }
+      }
+  }
+    
   

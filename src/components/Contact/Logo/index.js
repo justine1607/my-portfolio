@@ -1,9 +1,9 @@
 import './index.scss'
-import LogoS from '../../../assets/images/my-pic 1.png'
+import LogoS from '../../../assets/images/my-pic 1.jpg'
 const Logo =() =>{
     return(
         <div className='logo-container'>
-            <img className='solid-logo' src={LogoS} alt='my profile pic' />
+            <img src={LogoS} alt='myprofile-pic'className='my-pic animate--slow slideInRight' />
         </div>
     )
 }

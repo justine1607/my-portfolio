@@ -5,14 +5,11 @@ import { useEffect, useState } from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
-import Loader from 'react-loaders'
 
 
 
 const Home = () =>{
 const [letterClass,setLetterClass] = useState('text-animated');
-console.log(letterClass);
-const [loading,setLoading] = useState(true);
 const firstArray = ['u','s','t','i','n','e']
 console.log(firstArray);
 const secondArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r']
@@ -25,7 +22,6 @@ useEffect(() =>{
     // the it will takes a timout then a text-animated hover will render.
     if(letterClass === 'text-animated'){
         timoutId = setTimeout(() =>{
-            setLoading(false);
             setLetterClass('text-animated-hover');
         },4000);
     }
@@ -34,10 +30,7 @@ useEffect(() =>{
     };
 }, [letterClass]);
 return(
-    <>
-        {loading ? ( // Show loader only when loading is true
-        <Loader type="line"className='loader' />
-            ) : (
+
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
@@ -56,16 +49,17 @@ return(
                 strArray={secondArray}
                 idx={22} />
                 </h1>
-                <h2>Front-end Developer</h2>
-                <Link to='/contact'className='flat-button'>Contact me</Link>
+                <div class="wrapper">
+                    <span class='typing-demo initial-hidden'>Front-end Developer</span>
+                </div>
+                {/* <h2 className='animate--slow slideInLeft text'>Front-end Developer</h2> */}
+                <Link to='/contact'className='flat-button animate--delay-1s slideInLeft'>Contact me</Link>
                     
             </div>
                 <Logo />
         </div>
      )}
-    </>
- );
- }
+
 
 
 

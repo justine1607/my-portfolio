@@ -1,26 +1,86 @@
-
-.page{
-
-    width: 100%;
-    height: 100%;
-  
-
+// Utility class
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
-
-.container{
-    width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
-    opacity: 0;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
-    transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
+.animate--fast{
+    animation-duration: 0.6s;
+}
+.animate--delay-1s{
     animation-delay: 1s;
 }
+.animate--slow{
+    animation-duration: 5s;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-1100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(1100px);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-timing-function: ease-in;
+}
+
+
+
+// .page{
+
+//     width: 100%;
+//     height: 100%;
+  
+
+// }
+
+.container{
+    
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;   
+}
+.container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#21f367,#3d1ee9);
+  clip-path: circle(50% at right 70%);
+}
+.container::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#21f367,#3d1ee9,white);
+  clip-path: circle(30% at 10% 10%);
+}
+
 .about-page{
     .text-zone{
         position: absolute;
@@ -31,6 +91,7 @@
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
+        
 
         h1{
             font-size: 53px;
@@ -45,12 +106,22 @@
         p{
             font-size: 16px;
             font-family:'Courier New', Courier, monospace;
-            color:#AAAEB6;
-                
-            
+            color:#AAAEB6;  
          }
      }
-    }
+}
+
+@media screen and (max-width:1200px) {
+      .about-page{
+        .text-zone{
+          font-size: 16px;
+          position: absolute;
+          top: 65%;
+          width: 100%;
+          left: 2%;
+        }
+      }
+}
 .contact-page{
     .text-zone{
         position: absolute;
@@ -61,6 +132,7 @@
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
+        z-index: 1;
 
         h1{
             font-size: 53px;
@@ -84,13 +156,20 @@
     .contact-page{
         .text-zone
         {
-            width: 100%;
-            transform: none;
-            padding: 2%;
-           position: absolute;
-           top: 30%;
-           left: 2%;
+          width: 100%;
+          transform: none;
+          padding: 2%;
+          position: absolute;
+          top: 38%;
+          left: 2%;
+          font-family: "Courier New", "Courier", "monospac";
+          z-index: 2;
         }
+      .contact-form{
+        position: relative;
+        margin-top: 115%;
+        left: -2%;
+      }
      }
 }
 .project-page{
@@ -105,6 +184,7 @@
         max-height: 90%;
         display: flex;
         flex-direction: column;
+        z-index: 1;
 
         h1{
             font-size: 53px;
@@ -120,56 +200,73 @@
         
     }
 }
-@media screen and (max-width: 1200px) {
-    .page {
-      position: initial;
-    }
-  
-    .container {
-      position: initial;
-      height: auto;
-      min-height: auto;
-  
-      &.about-page,
-      &.contact-page,
-      &.portfolio-page {
-        .text-zone {
-          position: initial;
-          transform: none;
-          width: 100%;
-          display: block;
-          padding: 20px;
-          box-sizing: border-box;
+
+@media screen and (max-width:1200px){
+    .project-page{
+        .text-zone
+        {
+            width: 100%;
+            transform: none;
+            padding: 2%;
+           position: absolute;
+           top: 100px;
+           left: 5%;
         }
-      }
-  
-      &.portfolio-page {
+     }
+}
+
+.skills-page{
+    .text-zone{ 
+        position: absolute;
+        width: 40%;
+        overflow: hidden;
+        height: 40%;
+        left: 6%;
+        z-index: -1;
+        top: 34%;
+        vertical-align: middle;
+        display: table-cell;
+        z-index: 1;
+
+        h1{
+            font-size: 53px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 20%;
+        }
+        p{
+            font-size: 16px;
+            font-family:'Courier New', 'Courier', 'monospace';
+            color:#AAAEB6;
+           
+                
+            
+         }
+     }
+    }
+    @media screen and (max-width: 1200px) {
+    .skills-page {
+      .text-zone {
+        position: relative;
+        transform: none;
         width: 100%;
+        display: block;
         padding: 20px;
         box-sizing: border-box;
-  
-        h1.page-title {
-          margin-left: 20px;
-          margin-top: 20px;
-        }
-  
-        .image-box {
-          height: 200px;
-          max-width: calc(50% - 10px);
-        }
+        z-index: 1;
+      
+      h1 span{
+        font-size: 25px;
+      }
+       .slideInLeft{
+        font-size: 16px;
+        line-height: normal;
       }
     }
-  
-    .cube-cont {
-        position: absolute;
-        width: 100%;
-        overflow: visible;
-        margin-top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 150px;
-        right: 160px;
-        bottom: 120px;
-    }
+  }
 }
+

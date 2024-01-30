@@ -1,8 +1,12 @@
 
-/* html{
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
 
-  font-size: 62.5%;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;

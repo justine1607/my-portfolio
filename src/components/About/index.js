@@ -3,14 +3,14 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
-import Loader from 'react-loaders';
+
 
 
 
 const About =(() =>{
     
 const [letterClass,setLetterClass] = useState('text-animated')
-const [loading,setLoading] = useState(true);
+
 useEffect(() =>{
     let timoutId;
     // if the letter class is strictly equal to text-animated or after this animation
@@ -19,7 +19,6 @@ useEffect(() =>{
     // the it will takes a timout then a text-animated hover will render.
     if(letterClass === 'text-animated'){
         timoutId = setTimeout(() =>{
-            setLoading(false);
             setLetterClass('text-animated-hover');
         },3000);
     }
@@ -30,32 +29,28 @@ useEffect(() =>{
 
 
     return(
-         <>
-          {loading ? ( // Show loader only when loading is true
-        <Loader type="line"className='loader' />
-      ) : (
               <div className="container about-page">
                 <div className="text-zone">
-                  <h1>
+                  <h1 className='animate--fast'>
                     <AnimatedLetters
                       letterClass={letterClass}
                       strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
                       idx={15}
                     />
                   </h1>
-                  <p>
+                  <p className='animate--slow slideInLeft'>
                     I'm a very ambitious front-end developer looking for a role in an
                     established IT company with the opportunity to work with the latest
                     technologies on challenging and diverse projects.
                   </p>
-                  <p align="LEFT">
+                  <p align="LEFT" className='animate--slow slideInLeft'>
                     I'm quiet confident, naturally curious, and perpetually working on
                     improving my chops one design problem at a time.
                   </p>
                 </div>
 
-                <div className="cube-cont">
-                  <div className="cubespinner">
+                <div className="cube-cont animate--slow slideInRight">
+                  <div className="cubespinner ">
                     <div className="face1">
                       <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
                     </div>
@@ -77,9 +72,7 @@ useEffect(() =>{
                   </div>
                 </div>
               </div>
-      ) }
-            </>
-          )
-        }
+      ) 
+    }
 )
 export default About;

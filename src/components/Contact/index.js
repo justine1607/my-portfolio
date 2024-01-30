@@ -44,13 +44,10 @@ const  Contact = (()=>{
             })
             .catch(() => {
                 Swal.fire({
-                    hideClass: {
-                        popup: `
-                          animate__animated
-                          animate__fadeOutDown
-                          animate__faster
-                        `
-            }});
+                  icon:'error',
+                  title:'Oops...',
+                  text:'Please try again'  
+            });
             })
             .finally(() => {
                 e.target.reset();
@@ -60,7 +57,7 @@ const  Contact = (()=>{
     
     
     return(
-        <div className='conatiner contact-page'>
+        <div className='container contact-page'>
             <div className='text-zone'>
                 <h1>
                 <AnimatedLetters
