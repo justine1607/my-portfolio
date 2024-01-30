@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/livedetermined.github.io/my-portfolio/static/css/main.d2a8c490.css",
+    "main.js": "/livedetermined.github.io/my-portfolio/static/js/main.02e62a67.js",
+    "static/js/787.2ad9376a.chunk.js": "/livedetermined.github.io/my-portfolio/static/js/787.2ad9376a.chunk.js",
+    "static/media/my-pic 1.jpg": "/livedetermined.github.io/my-portfolio/static/media/my-pic 1.c66ea09d0906427d8aa9.jpg",
+    "static/media/1st-projects.png": "/livedetermined.github.io/my-portfolio/static/media/1st-projects.2e52faeafa88e010442f.png",
+    "static/media/logo3.png": "/livedetermined.github.io/my-portfolio/static/media/logo3.4e8df23c0dbefba0b048.png",
+    "static/media/logo_sub.png": "/livedetermined.github.io/my-portfolio/static/media/logo_sub.64d6fab35a359efebe36.png",
+    "static/media/logo4.png": "/livedetermined.github.io/my-portfolio/static/media/logo4.589bcae74a7fdc543165.png",
+    "index.html": "/livedetermined.github.io/my-portfolio/index.html",
+    "static/media/CoolveticaRg-Regular.woff2": "/livedetermined.github.io/my-portfolio/static/media/CoolveticaRg-Regular.31d6cfe0d16ae931b73c.woff2",
+    "static/media/LaBelleAurore.woff2": "/livedetermined.github.io/my-portfolio/static/media/LaBelleAurore.31d6cfe0d16ae931b73c.woff2",
+    "static/media/helvetica-neu.ttf": "/livedetermined.github.io/my-portfolio/static/media/helvetica-neu.31d6cfe0d16ae931b73c.ttf",
+    "main.d2a8c490.css.map": "/livedetermined.github.io/my-portfolio/static/css/main.d2a8c490.css.map",
+    "main.02e62a67.js.map": "/livedetermined.github.io/my-portfolio/static/js/main.02e62a67.js.map",
+    "787.2ad9376a.chunk.js.map": "/livedetermined.github.io/my-portfolio/static/js/787.2ad9376a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2a8c490.css",
+    "static/js/main.02e62a67.js"
+  ]
+}
