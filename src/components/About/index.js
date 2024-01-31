@@ -25,7 +25,7 @@ useEffect(() =>{
     return () =>{
         clearTimeout(timoutId);
     };
-}, []);
+}, [letterClass]);
 
 
     return(

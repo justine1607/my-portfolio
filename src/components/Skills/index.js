@@ -43,13 +43,14 @@ const Skills = () => {
         first-web design. I put special effrot into optimizing my code and providing the 
         best user experience. I would love to give any kind of support also after the 
         project's completion. I guarantee a commitment during work on your project.
-        Visit my <a href='https://www.linkedin.com/in/justine-miras-929778280/'>LinkeIn</a>profile for more details. Also you can check my cv on this <a href='#'>link</a>
+        Visit my <a href='https://www.linkedin.com/in/justine-miras-929778280/'>LinkeIn</a> profile for more details. Also you can check my cv on this <a href='#'>link</a>
         </p>
       </div>
+    <div className='cubes'>
       <div className="card-container1 animate--slow slideInRight">
         <div className='card1'>
           <div className='front'>
-          <img src={Logo1} className="card-img-top" alt="html" />
+            <img src={Logo1} className="card-img-top" alt="html" />
           </div>
           <div className="card-body">
             <h5 className="card-title">HTML</h5>
@@ -145,7 +146,7 @@ const Skills = () => {
           </div>
         </div>
     </div>
-  
+  </div>
    </div>
   );
 }

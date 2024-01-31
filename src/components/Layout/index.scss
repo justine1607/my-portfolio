@@ -106,7 +106,7 @@
         p{
             font-size: 16px;
             font-family:'Courier New', Courier, monospace;
-            color:#AAAEB6;  
+            color:#EEEEEE;  
          }
      }
 }
@@ -147,7 +147,7 @@
         p{
             font-size: 16px;
             font-family:'Courier New', Courier, monospace;
-            color:#AAAEB6;
+            color:#EEEEEE;
             
         }
     }
@@ -228,6 +228,7 @@
         display: table-cell;
         z-index: 1;
 
+
         h1{
             font-size: 53px;
             font-family:Georgia, 'Times New Roman', Times, serif;
@@ -236,16 +237,20 @@
             margin-top: 0;
             position: relative;
             margin-bottom: 40px;
-            left: 20%;
+            
         }
         p{
             font-size: 16px;
             font-family:'Courier New', 'Courier', 'monospace';
-            color:#AAAEB6;
-           
-                
-            
+            color:#EEEEEE;
          }
+
+        a{
+          color: #EEEEEE;
+        }
+        a:hover{
+          color: greenyellow;
+        }
      }
     }
     @media screen and (max-width: 1200px) {
@@ -258,6 +263,7 @@
         padding: 20px;
         box-sizing: border-box;
         z-index: 1;
+        margin-left: -4%;
       
       h1 span{
         font-size: 25px;
