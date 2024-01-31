@@ -53,7 +53,7 @@ return(
                     <span class='typing-demo initial-hidden'>Front-end Developer</span>
                 </div>
                 {/* <h2 className='animate--slow slideInLeft text'>Front-end Developer</h2> */}
-                <Link to='/contact'className='flat-button animate--fast slideInLeft'>Contact me</Link>
+                <Link to='/contact'className='flat-button animate--slow slideInLeft'>Contact me</Link>
                     
             </div>
                 <Logo />

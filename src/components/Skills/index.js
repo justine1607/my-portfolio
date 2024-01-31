@@ -113,7 +113,7 @@ const Skills = () => {
           </div>
         </div>
     </div>
-    <div className="card-container3 animate--slow slideInRight">
+    <div className="card-container3 animate--fast slideInRight">
         <div className='card7'>
           <div className='front'>
             <img src={Logo7} className="card-img-top" alt="git" />

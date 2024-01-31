@@ -16,7 +16,7 @@
 
 @keyframes slideInLeft {
     from {
-        transform: translateX(-1100px);
+        transform: translateY(-100px);
     }
     to {
         transform: translateX(0);
@@ -30,7 +30,7 @@
 
 @keyframes slideInRight {
   from {
-      transform: translateX(1100px);
+      transform: translateX(100px);
   }
   to {
       transform: translateX(0);

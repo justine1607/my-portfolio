@@ -55,7 +55,7 @@ img{
       }
 
       &:hover{
-        color: black;
+        color: greenyellow;
 
         svg{
 
@@ -113,7 +113,7 @@ img{
 
     a.active{
       svg{
-        color: white;
+        color: yellowgreen;
       }
     }
    }
@@ -135,7 +135,7 @@ img{
           line-height: 16px;
 
           &:hover svg{
-            color:black          }
+            color:yellowgreen          }
         }
       }
     }
