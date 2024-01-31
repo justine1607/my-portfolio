@@ -5,7 +5,7 @@ const Logo =() =>{
         
         <div className='box'>
             <div className='content'> 
-                <img src={LogoS} alt='my profile pic' />
+                <img src={LogoS} alt='my profile pic'/>
                 <h2>An Enthusiastic Front-end Developer</h2>
             </div>
         </div>
