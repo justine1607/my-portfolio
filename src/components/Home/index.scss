@@ -50,7 +50,7 @@
       
       &:hover {
         background: greenyellow;
-        transform: translateX(-100px);
+        transform: translateY(10px);
         color: #333;
       }
     }
@@ -63,14 +63,14 @@
     
     .typing-demo {
       width: 19ch;
-      animation: appear 15s linear 2s forwards, typing 2s steps(18), blink .5s step-end infinite alternate;
+      animation: appear 15s linear 2s forwards, typing 5s steps(18), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
       font-family: monospace;
-      font-size: 2em;
-      color: #8d8d8d;
-      margin-left: -64%;
+      font-size: 24px;
+      color:white;
+      margin-left: -85%;
     }
     
     @keyframes typing {
@@ -115,5 +115,7 @@
         margin-top: 5%;
         width: 100%;
         left: 25%;
+        text-transform: uppercase;
+        
     }
 }

@@ -55,7 +55,7 @@ img{
       }
 
       &:hover{
-        color: #1af451;
+        color: black;
 
         svg{
 
@@ -113,7 +113,7 @@ img{
 
     a.active{
       svg{
-        color: forestgreen;
+        color: white;
       }
     }
    }
@@ -135,8 +135,7 @@ img{
           line-height: 16px;
 
           &:hover svg{
-            color:#1af451
-          }
+            color:black          }
         }
       }
     }
@@ -161,7 +160,9 @@ img{
           width: 25%;
           top: 0;
           left: 0;
-          background: #1af451;
+          background: rgba(255, 255, 255, 0.1);
+          border-right:1px solid rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
           height: 100%;
           margin: 0;
           z-index: 2;
@@ -190,12 +191,14 @@ img{
             top: 15px;
             right: 50px;
             display: block;
+            cursor: pointer;
          }
          .close-icon {
             position: absolute;
             top: 8px;
             left: 75px;
             display: block;
+            cursor: pointer;
          }
       }
     }

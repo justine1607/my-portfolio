@@ -36,7 +36,7 @@ const Skills = () => {
             letterClass={letterClass}
           />
         </h1>
-        <p className='animate--slow slideInLeft'>
+        <p className='animate--fast slideInLeft'>
         A goal-oriented Entry Level Frontend Developer including technologies like HTML,
         CSS3 JavaScript,React,Bootstrap,Sass,Git,etc.
         I'm not a designer but I have a good sense of aesthetic, and respomsive,mobile-
@@ -47,7 +47,7 @@ const Skills = () => {
         </p>
       </div>
     <div className='cubes'>
-      <div className="card-container1 animate--slow slideInRight">
+      <div className="card-container1 animate--fast slideInRight">
         <div className='card1'>
           <div className='front'>
             <img src={Logo1} className="card-img-top" alt="html" />
@@ -80,7 +80,7 @@ const Skills = () => {
           </div>
         </div>
     </div>
-    <div className="card-container2 animate--slow slideInRight">
+    <div className="card-container2 animate--fast slideInRight">
         <div className='card4'>
           <div className='front'>
           <img src={Logo4} className="card-img-top" alt="react" />

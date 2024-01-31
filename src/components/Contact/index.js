@@ -66,7 +66,7 @@ const  Contact = (()=>{
                     idx={15}
                     />
                 </h1>
-                <p className='animate--slow slideInLeft'>
+                <p className='animate--fast slideInLeft'>
                     I am interested in freelance oppurtunities - espescially ambitious or
                     large projets. However, if you have other request or question,
                     don't hesititate to conatct me using below form either. 

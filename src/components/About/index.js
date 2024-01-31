@@ -38,18 +38,18 @@ useEffect(() =>{
                       idx={15}
                     />
                   </h1>
-                  <p className='animate--slow slideInLeft'>
+                  <p className='animate--fast slideInLeft'>
                     I'm a very ambitious front-end developer looking for a role in an
                     established IT company with the opportunity to work with the latest
                     technologies on challenging and diverse projects.
                   </p>
-                  <p align="LEFT" className='animate--slow slideInLeft'>
+                  <p align="LEFT" className='animate--fast slideInLeft'>
                     I'm quiet confident, naturally curious, and perpetually working on
                     improving my chops one design problem at a time.
                   </p>
                 </div>
 
-                <div className="cube-cont animate--slow slideInRight">
+                <div className="cube-cont animate--fast slideInRight">
                   <div className="cubespinner ">
                     <div className="face1">
                       <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
