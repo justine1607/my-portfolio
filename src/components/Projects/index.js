@@ -30,19 +30,15 @@ const Projects = () => {
                 </h1>
             </div>
             <div className='my-projects'>
-                <div>
                 <img className='my-project1 animate--fast slideInLeft' src={chloroR} alt='pic of my 1st project' />
-                </div>
-                <div>
                 <h6>
                     <a className='link1 animate--fast slideInLeft' href='https://apexpointv2.vercel.app/chlorelief'>Link to Project</a>
                 </h6>
                 <h1 className='project animate--fast slideInRight'>
                     Other projects are not done yet😌
                 </h1>
-                </div>
-            </div>
         </div>
+    </div>
     );
 };
 

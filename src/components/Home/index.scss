@@ -85,9 +85,6 @@
       }
     }
   }
-  
-  
-  
   @media screen and (max-width: 1200px) {
     .home-page{
       width: 100%;
@@ -118,4 +115,36 @@
         text-transform: uppercase;
         
     }
+  }
+
+    @media screen and (max-width: 375px) {
+      .home-page{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-zone {
+          transform: none;
+          padding: 10px;
+          box-sizing: border-box;
+          position: absolute;
+          margin-top: -3%;
+          width: 100%;
+          left: 5%;
+      }
+     }
+      .home-page .flat-button {
+        
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 124px;
+      }
+      .home-page .wrapper{
+          position: relative;
+          margin-top: 5%;
+          width: 100%;
+          left: 25%;
+          text-transform: uppercase;
+          
+      }
 }

@@ -93,4 +93,22 @@
     }// or any other styling you want to apply for smaller screens
   }
   
+  @media screen and (max-width: 375px)  {
+    margin-top: -11%;
+    right: 63%;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+
+  .cube-cont .cubespinner {
+    animation: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+    display: none;
+  }
+}
 }
