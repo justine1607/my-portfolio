@@ -1,0 +1,204 @@
+.navbar{
+
+  background-color: #181818;
+  width: 57px;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  position: fixed;
+
+.logo {
+
+  display: block;
+  padding: 8px 0;
+}
+
+img{
+  display: block;
+  margin: 8px auto;
+  width: 50px;
+  height: auto;
+
+  // &:hover {
+  //   transform: scale(1.1); /* Scale up slightly on hover */
+  //   /* Add the background image or change the source here */
+  //   content: url('path-to-hover-image.jpg');
+  // }
+
+  &.sub-logo{
+    width: 80px ;
+    }
+   }
+ }
+
+  nav{
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a{
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i{
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover{
+        color: greenyellow;
+
+        svg{
+
+          opacity: 0;
+        }
+
+        &::after{
+          opacity: 1;
+        }
+      }
+
+      &::after{
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child{
+        &::after{
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link{
+      &:after{
+        content: 'ABOUT';
+      }
+    }
+
+    a.skills-link{
+      &:after{
+        content: 'SKILLS';
+      }
+    }
+
+    a.contact-link{
+      &:after{
+        content: 'CONTACT';
+      }
+    }
+
+    a.project-link{
+      &:after{
+        content: 'PROJECT';
+      }
+    }
+
+    a.active{
+      svg{
+        color: yellowgreen;
+      }
+    }
+   }
+    ul{
+      //position: absolute;
+      //bottom: 20px;
+      width: 100%;
+      display: block;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+
+      li{
+        a{
+          padding: 7px 0;
+          display: block;
+          font-size: 15px;
+          line-height: 16px;
+
+          &:hover svg{
+            color:yellowgreen          }
+        }
+      }
+    }
+  
+    .hamburger-icon, .close-icon {
+      display: none;
+    }
+    
+    
+    @media screen and (max-width: 1200px) {
+      .navbar { 
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+    
+         ul, nav {
+          display: none;
+         }
+    
+         nav {
+          width: 25%;
+          top: 0;
+          left: 0;
+          background: rgba(255, 255, 255, 0.1);
+          border-right:1px solid rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
+          height: 100%;
+          margin: 0;
+          z-index: 2;
+          position: fixed;
+    
+          &.mobile-show {
+            display: block;
+          }
+    
+          a {
+            display: flex;
+            align-items: center;
+            margin-left: 2px;
+          }
+    
+          a:after {
+            opacity: 1;
+            position: initial;
+            width: auto;
+            margin-left: 10PX;
+          }
+         }
+    
+         .hamburger-icon{
+          position: absolute;
+            top: 15px;
+            right: 50px;
+            display: block;
+            cursor: pointer;
+         }
+         .close-icon {
+            position: absolute;
+            top: 8px;
+            left: 75px;
+            display: block;
+            cursor: pointer;
+         }
+      }
+    }

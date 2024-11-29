@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: '300 11px/1.4', 'Helvetica Neue', sans-serif;
+  color: #444;
+  background-color: #020202;
+  /* overflow: hidden; */
+  /* display: block; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

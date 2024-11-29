@@ -1,0 +1,98 @@
+.skills-container{
+  display: flex;
+  justify-content: center;align-items: center;
+}
+.skills-page{
+  display: flex;flex-direction: column;gap: 2rem;
+}
+.skills-text{
+  display: flex;flex-direction: column;
+  .text{
+    z-index: 2;
+  }
+  .body-text{
+    z-index: 2;
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+}
+.cubes{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+  .card-container {
+    z-index: 2;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 50px 0px 0px 0px;
+
+    .card {
+      flex: 1;
+      background-color: #FFFFFF;
+      padding: 120px;
+      border-radius: 30px;
+      box-shadow: 0px 4px 15px 0px rgba(241, 25, 25, 0.71), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Center content horizontally
+      justify-content: center;
+    }
+
+    .card:hover {
+      cursor: pointer;
+      transform: rotateY(180deg);
+    }
+
+    .card {
+      position: relative;
+      transition: transform 1500ms;
+      transform-style: preserve-3d;
+    }
+
+    .front,
+    .card-body {
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .card-body {
+      border-radius: 2rem;
+      background-color: #3a3a3a;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #ebf1f1;
+      height: 100%;
+
+      .card-title {
+        font-size: 24px;
+        color: #ebf1f1;
+      }
+
+      .card-text {
+        font-size: 24px;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 10%;
+      }
+
+      .button {
+        list-style: none;
+        font-size: 16px;
+        color: #ebf1f1;
+      }
+    }
+  }
+
+@media  screen and (max-width: 768px) {
+  .card-container{
+    flex-wrap: wrap;
+  }
+}
+

@@ -1,0 +1,131 @@
+.theme-contact{
+  display: flex;justify-content: center;align-items: center;
+}
+.contact-page{
+  display: flex;gap: 2rem;
+}
+.contact-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 2;
+  z-index: 2;
+}
+.logo-container{
+  flex: 1;
+}
+.contact-text{
+  //flex: 1;
+  z-index: 2;
+  display: flex;flex-direction: column;gap: 2rem;
+}
+.contact-title{
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 53px;
+  font-weight: 600;
+}
+.text-describe{
+  font-family: Courier New, Courier, monospace;;
+  text-transform: inherit;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+}
+.contact-form{
+  //flex: 1;
+}
+
+.contact-form {
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .style {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='text-area'] {
+      width: 100%;
+      border: 0;
+      background: greenyellow;
+      height: 60px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .flat-buttons {
+      margin-left: auto;
+      color: greenyellow;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 25px;
+      border: 1px solid greenyellow;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-page{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-wrapper{
+    order: 2;
+  }
+}
+//    margin-top: 1%;
+//    /* margin-right: 20%; */
+//    margin-left: 91%;
+//
+//    @media screen and (max-width:1200px) {
+//      float: none;
+//      display: block;
+//      margin: 20px auto 0 auto;
+//      margin-left: 84%;
+//
+//    }
+//    }
+//    .flat-buttons:hover{
+//      background-color: yellowgreen;
+//    }
+//
+//
+  

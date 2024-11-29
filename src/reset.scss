@@ -1,0 +1,81 @@
+
+body{
+  font-size: 1.8rem;
+  font-family: var(--typography);
+  font-weight: var(--heading-medium);
+  line-height: var(--headingM-line);
+  min-height: 100vh;
+  color: var(--grey);
+  background-color: var(--black-8);
+  text-rendering: optimizeSpeed;
+}
+a{
+  text-decoration: none;
+}
+/* Modern CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px; /* Set base font-size (16px for most browsers) */
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling on mobile */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; /* Responsive media */
+}
+
+button, input, select, textarea {
+  font: inherit; /* Inherit font settings */
+}
+
+a {
+  color: inherit; /* Use the current color */
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none; /* Remove list styles */
+}
+
+table {
+  border-collapse: collapse; /* Consistent table borders */
+  width: 100%;
+}
+
+q, blockquote {
+  quotes: none; /* Remove quote styling */
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: ''; /* Prevent default quotes */
+}
+
+hr {
+  border: none; /* Remove default HR styling */
+}
+
+:focus {
+  outline: 2px dashed #000; /* Visible focus outline */
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none; /* Remove outline for non-keyboard focus */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
